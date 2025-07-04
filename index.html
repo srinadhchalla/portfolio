@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,453 +8,509 @@
     <link rel="stylesheet" href="index.css">
     <script src="https://kit.fontawesome.com/13b7740f71.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="mainContainer">
-    <nav>
-        <div class="Brand">
-          <h1>S<span>y</span></h1>
-          <h2><span>S</span>rinadh Marl<span>y</span></h2>
-        </div>
-        <ul class="navItems">
-          <li onclick="display('home')"><a>Home</a></li>
-          <li><a href="#About">About me</a></li>
-          <li><a href="#Skills">Skills</a></li>
-          <li><a href="#Certifications">Certifications</a></li>
-          <li><a href="#Projects">Projects</a></li>
-          <li><a href="#ContactUs">Contact Me</a></li></li>
-        </ul>
-    </nav>
-    <div class="userContainer" id="home">
-      <p>Fullstack Developer</p>
-      <h1>hey! <br> I'm <span1>Srinadh</span1> <br>from <span>Tirupati</span></h1>
-    </div>
 
-    <div id="About">
-      <div class="aboutAlign">
-        <div class="left">
-          <img src="./images/myImage.jpg" alt="profile" />
-        </div> 
-        <div class="right">
-          <h1>About Me</h1>
-          <h2>Objective</h2>
-          <p>I'm a Hard working engineering graduate spacialised in mechanical engineering even my degree in hardware my passion for technology and problem solving skills led me to software industry, so along with my degree i have joined into online course provided by the NXT wave which is 4 years course. with that course i learnt skills as follws.  </p>
-          <h2>Education</h2>
-          <div class="align">
-            <button class="active" id="btechBtn" onclick=(onclickBtech())>B-Tech</button>
-            <button class="btn0"  id="diplomaBtn" onclick=(onclickDiploma())>Diploma</button>
-            <button class="btn0" id="interBtn" onclick=(onclickInter())>Tech-Inter</button>
-          </div>
-          <div class="education-details">
-          <div id="Btech" class="flex">
-            <h1>Collage : <span>Sri Venkateswara Collage of engineering</span></h1>
-            <h1>spacialised : <span>Mechanical engineering</span></h1>
-            <h1>Percentage : 86 %</h1>
-            <h1>passedOut : <span>2024</span></h1>
-            <h1>Location : <span>Tirupathi</span></h1>
-          </div>
-          <div id="Diploma" class="none">
-            <h1>Collage : <span>Govt.Polytecnic Gudur</span></h1>
-            <h1>spacialised : <span>Mechanical engineering</span></h1>
-            <h1>Percentage : 75 %</h1>
-            <h1>passedOut : <span>2021</span></h1>
-            <h1>Location : <span>Gudur</span></h1>
-          </div>
-          <div id="Inter" class="none">
-            <h1>Collage : <span>S.K.R Junior Collage</span></h1>
-            <h1>spacialised : <span>Mechanical engineering</span></h1>
-            <h1>Percentage : 96 %</h1>
-            <h1>passedOut : <span>2019</span></h1>
-            <h1>Location : <span>Gudur</span></h1>
-          </div>
+<body>
+    <div class="mainContainer">
+        <nav>
+            <div class="Brand">
+                <h1>S<span>y</span></h1>
+                <h2><span>S</span>rinadh Marl<span>y</span></h2>
+            </div>
+            <ul id="navItems">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About me</a></li>
+                <li><a href="#wrapper">Skills</a></li>
+                <li><a href="#Certifications">Certifications</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#ContactMe">Contact me</a></li>
+                <i class="fa-solid fa-xmark" onclick="onclickCross()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick=(onclickMenu())></i>
+        </nav>
+
+        <div class="userContainer" id="home">
+            <p>Fullstack Developer</p>
+            <h1>Hey! <br> I'm <span1>Srinadh</span1> <br>from <span>Tirupati</span></h1>
         </div>
+
+        <div id="About">
+            <div class="aboutAlign">
+                <div class="left">
+                    <img src="https://i.ibb.co/BH2NkZj3/myImage.jpg" alt="Profile" />
+                </div>
+                <div class="right">
+                    <h3 class="Title">About Me</h3>
+                    <h2>Objective</h2>
+                    <p>
+                        I'm a hardworking engineering graduate specialized in Mechanical Engineering.
+                        Even though my degree is in hardware, my passion for technology and problem-solving skills
+                        led me to the software industry. Alongside my degree, I enrolled in a 4-year online course
+                        provided by NXT Wave. Through this course, I acquired the following skills.
+                    </p>
+                    <h2>Education</h2>
+                    <div class="align">
+                        <button class="active" id="btechBtn" onclick="onclickBtech()">B.Tech</button>
+                        <button class="btn0" id="diplomaBtn" onclick="onclickDiploma()">Diploma</button>
+                        <button class="btn0" id="interBtn" onclick="onclickInter()">Tech-Inter</button>
+                    </div>
+                    <div class="education-details">
+                        <div id="Btech" class="flex">
+                            <h1>College: <span>Sri Venkateswara College of Engineering</span></h1>
+                            <h1>Specialization: <span>Mechanical Engineering</span></h1>
+                            <h1>Percentage: <span>86%</span></h1>
+                            <h1>Passed Out: <span>2024</span></h1>
+                            <h1>Location: <span>Tirupati</span></h1>
+                        </div>
+                        <div id="Diploma" class="none">
+                            <h1>College: <span>Govt. Polytechnic, Gudur</span></h1>
+                            <h1>Specialization: <span>Mechanical Engineering</span></h1>
+                            <h1>Percentage: <span>75%</span></h1>
+                            <h1>Passed Out: <span>2021</span></h1>
+                            <h1>Location: <span>Gudur</span></h1>
+                        </div>
+                        <div id="Inter" class="none">
+                            <h1>College: <span>S.K.R Junior College</span></h1>
+                            <h1>Specialization: <span>Mechanical Engineering</span></h1>
+                            <h1>Percentage: <span>96%</span></h1>
+                            <h1>Passed Out: <span>2019</span></h1>
+                            <h1>Location: <span>Gudur</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <script>
+            var BTech = document.getElementById("Btech")
+            var Diploma = document.getElementById("Diploma")
+            var Inter = document.getElementById("Inter")
+            var btechBtn = document.getElementById("btechBtn")
+            var diplomaBtn = document.getElementById("diplomaBtn")
+            var interBtn = document.getElementById("interBtn")
+
+            function onclickBtech() {
+
+                BTech.classList.add("flex")
+                Inter.classList.add("none")
+                Diploma.classList.add("none")
+                Inter.classList.remove("flex")
+                Diploma.classList.remove("flex")
+                btechBtn.classList.add("active")
+                btechBtn.classList.remove("btn0")
+                diplomaBtn.classList.add("btn0")
+                diplomaBtn.classList.remove("active")
+                interBtn.classList.add("btn0")
+                interBtn.classList.remove("active")
+            }
+
+            function onclickDiploma() {
+                BTech.classList.add("none")
+                Btech.classList.remove("flex")
+                Inter.classList.add("none")
+                Diploma.classList.add("flex")
+                Inter.classList.remove("flex")
+                btechBtn.classList.add("btn0")
+                btechBtn.classList.remove("active")
+                diplomaBtn.classList.add("active")
+                diplomaBtn.classList.remove("btn0")
+                interBtn.classList.add("btn0")
+                interBtn.classList.remove("active")
+            }
+
+            function onclickInter() {
+                Btech.classList.remove("flex")
+                Diploma.classList.remove("flex")
+                BTech.classList.add("none")
+                Inter.classList.add("flex")
+                Diploma.classList.add("none")
+                btechBtn.classList.add("btn0")
+                btechBtn.classList.remove("active")
+                diplomaBtn.classList.add("btn0")
+                diplomaBtn.classList.remove("active")
+                interBtn.classList.add("active")
+                interBtn.classList.remove("btn0")
+            }
+        </script>
+
+        <div id="wrapper">
+            <h1 class="Title">Skills</h1>
+            <div class="inner" style="--quantity: 10;">
+                <div class="card5" style="--index: 0; --color-card: 142, 249, 252;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/hxHpzRWY/python-Image.png" alt="Python" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 1; --color-card: 142, 252, 204;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/4Zgm3p48/htmlLogo.png" alt="HTML" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 2; --color-card: 142, 252, 157;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/WNSQCcsb/cssLogo.png" alt="CSS" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 3; --color-card: 215, 252, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/mFtSX508/javascript-Logo.png" alt="JavaScript" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 4; --color-card: 252, 142, 239;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/jtKnmSq/sglLogo.png" alt="SQL" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 5; --color-card: 252, 252, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/dJbrsSMY/nodeLogo.png" alt="Node.js" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 6; --color-card: 252, 208, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/fGyrg3vG/react-Logo.png" alt="React.js" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 7; --color-card: 252, 142, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/5XJYmBTY/express-Logo.png" alt="Express.js" />
+                    </div>
+                    <h1 style="font-weight: bold; font-size: 15px;">Express.js</h1>
+                </div>
+                <div class="card5" style="--index: 8; --color-card: 252, 208, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/vvTZC6Qc/awsLogo.png" alt="AWS" />
+                    </div>
+                </div>
+                <div class="card5" style="--index: 9; --color-card: 252, 208, 142;">
+                    <div class="img">
+                        <img class="Logo" src="https://i.ibb.co/zW78BfDF/github-Logo.png" alt="GitHub" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="Certifications">
+            <h1 class="Title">Certifications</h1>
+            <div class="certificatesAlign">
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Build Your Own Static Website</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/4Zgm3p48/htmlLogo.png" alt="HTML Logo" />
+                                    <img src="https://i.ibb.co/WNSQCcsb/cssLogo.png" alt="CSS Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/SbyB4kK/html-Css-Certificates.jpg" alt="Static Website Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Programming Foundations with Python</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/hxHpzRWY/python-Image.png" alt="Python Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/4w8jy5Vf/python-Certificate.jpg" alt="Python Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Build Your Own Dynamic Web Application</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/mFtSX508/javascript-Logo.png" alt="JavaScript Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/VWhhnSfd/javascript-Certificate.jpg" alt="JavaScript Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/dynamic-web-application?id=DMOKSREJHF" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Introduction to Databases</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/jtKnmSq/sglLogo.png" alt="SQL Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/RpnwRvfN/Sql-Certificate.jpg" alt="SQL Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/introduction-to-databases?id=QSVJOIVSVT" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Developer Foundations</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/zW78BfDF/github-Logo.png" alt="GitHub Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/zVKkh7LN/github-Certificate.jpg" alt="GitHub Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="content">
+                        <div class="back">
+                            <div class="back-content">
+                                <h1>Build a Responsive Website</h1>
+                                <div class="Align">
+                                    <img src="https://i.ibb.co/934CfJyH/flex-Box-Logo.png" alt="Flexbox Logo" />
+                                    <img src="https://i.ibb.co/0VnqDYfG/bootstarp-Logo.png" alt="Bootstrap Logo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="front">
+                            <div class="img">
+                                <div class="circle"></div>
+                                <div class="circle" id="right"></div>
+                                <div class="circle" id="bottom"></div>
+                            </div>
+                            <div class="front-content">
+                                <img src="https://i.ibb.co/0RkSR1TL/responsive-Webpage.jpg" alt="Responsive Website Certificate" />
+                                <a href="https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=CIJTUBQOCG" target="_blank">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="Projects">
+            <h1 class="Title">Projects</h1>
+            <div class="projectsAlign">
+
+                <div class="projectCard">
+                    <img src="https://i.ibb.co/Y4N55T4K/independenceday-Image.jpg" alt="Independence Day Project" />
+                    <div class="layer">
+                        <p>Title</p>
+                        <h1>Independence Webpage Project</h1>
+                        <p>Languages Used</p>
+                        <h2>HTML, CSS</h2>
+                        <a href="https://srinadhmarly.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img src="https://i.ibb.co/0yrF09DW/foodmunch-Image.jpg" alt="FoodMunch Project" />
+                    <div class="layer">
+                        <p>Title</p>
+                        <h1>FoodMunch Delivery App Project</h1>
+                        <p>Languages Used</p>
+                        <h2>HTML, CSS, JavaScript</h2>
+                        <a href="https://d2kzmfbhzwel4g.cloudfront.net/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img src="https://i.ibb.co/k6B9j7F0/bookmyshow-Image.jpg" alt="BookMyShow Clone Project" />
+                    <div class="layer">
+                        <p>Title</p>
+                        <h1>BookMyShow Clone Web Project</h1>
+                        <p>Languages Used</p>
+                        <h2>HTML, CSS</h2>
+                        <a href="https://marlybookmyshow.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img src="https://i.ibb.co/1GrLGKxS/sunrise-Image.jpg" alt="Flat Booking Webpage Project" />
+                    <div class="layer">
+                        <p>Title</p>
+                        <h1>Flat Booking Webpage Project</h1>
+                        <p>Languages Used</p>
+                        <h2>HTML, CSS</h2>
+                        <a href="https://sunrisebookmark.ccbp.tech/" target="_blank">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="projectCard">
+                    <img src="https://i.ibb.co/JF7T4SrM/background-Image.jpg" alt="NxtWatch Streaming Project" />
+                    <div class="layer">
+                        <p>Title</p>
+                        <h1>NxtWatch Streaming Project</h1>
+                        <p>Languages Used</p>
+                        <h2>HTML, CSS, React</h2>
+                        <a href="#" target="_blank">
+                            <!-- Replace # with actual link -->
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="ContactMe">
+            <div class="underLine"></div>
+            <h1 class="Title mLeft">Contact Me</h1>
+            <div class="contactAlign">
+                <div class="left">
+                    <h1><span><i class="fa-solid fa-envelope-open-text"></i></span> srinadhmarly@gmail.com</h1>
+                    <h1><span><i class="fa-solid fa-phone"></i></span> +91 6300716336</h1>
+
+                    <h1>
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                        <a href="http://www.linkedin.com/in/marly-srinadh" target="_blank">linkedin.com/in/marly-srinadh</a>
+                    </h1>
+
+                    <h1>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <a href="https://x.com/srinadhmarly" target="_blank">x.com/srinadhmarly</a>
+                    </h1>
+
+                    <p>Resume</p>
+                    <a href="https://raw.githubusercontent.com/srinadhchalla/srinadhresume/main/updated%20srinadh%20resume%2002-2-25%20(1).pdf" download="srinadh_resume.pdf">
+                        <button class="btn">Download</button>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <h1 class="Title">Ping Me</h1>
+                    <div class="form-container">
+                        <form class="form" name="submit-to-google-sheet">
+                            <div class="form-group">
+                                <label for="Name">Your Name</label>
+                                <input type="text" id="Name" name="Name" required>
+
+                                <label for="Email">Your Email</label>
+                                <input type="email" id="Email" name="Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="textarea">What Do You Want to Say?</label>
+                                <textarea name="Message" id="textarea" rows="10" cols="50" required></textarea>
+                            </div>
+                            <button type="submit" class="form-submit-btn">Submit</button>
+                            <span id="msg"></span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="underLine"></div>
+            <div class="copyright">
+                <p class="footer">© 2025 Srinadh Challa. All rights reserved. Made with <i class="fa-solid fa-heart"></i> love.</p>
+            </div>
+        </div>
+
     </div>
     <script>
-      var BTech = document.getElementById("Btech")
-      var Diploma = document.getElementById("Diploma")
-      var Inter = document.getElementById("Inter")
-      var btechBtn = document.getElementById("btechBtn")
-      var diplomaBtn = document.getElementById("diplomaBtn")
-      var interBtn = document.getElementById("interBtn")
-      
-      function onclickBtech(){
+        const unorderedList = document.getElementById("navItems");
 
-        BTech.classList.add("flex")
-        Inter.classList.add("none")
-        Diploma.classList.add("none")  
-        Inter.classList.remove("flex") 
-        Diploma.classList.remove("flex")   
-        btechBtn.classList.add("active")
-        btechBtn.classList.remove("btn0")
-        diplomaBtn.classList.add("btn0")
-        diplomaBtn.classList.remove("active")  
-        interBtn.classList.add("btn0")
-        interBtn.classList.remove("active")
-      }
-      function onclickDiploma(){
-        BTech.classList.add("none")
-        Btech.classList.remove("flex")
-        Inter.classList.add("none")
-        Diploma.classList.add("flex")  
-        Inter.classList.remove("flex")   
-        btechBtn.classList.add("btn0")
-        btechBtn.classList.remove("active")
-        diplomaBtn.classList.add("active")
-        diplomaBtn.classList.remove("btn0")  
-        interBtn.classList.add("btn0")
-        interBtn.classList.remove("active")   
-      }
-      function onclickInter(){
-        Btech.classList.remove("flex")
-        Diploma.classList.remove("flex")
-        BTech.classList.add("none")
-        Inter.classList.add("flex")
-        Diploma.classList.add("none")     
-        btechBtn.classList.add("btn0")
-        btechBtn.classList.remove("active")
-        diplomaBtn.classList.add("btn0")
-        diplomaBtn.classList.remove("active")  
-        interBtn.classList.add("active")
-        interBtn.classList.remove("btn0")   
-      }
+        function onclickMenu() {
+            unorderedList.style.right = "0px"
+        }
+
+        function onclickCross() {
+            unorderedList.style.right = "-200px"
+        }
     </script>
-       
-        <div class="wrapper">
-          <h1>Skills</h1>
-          <div class="inner" style="--quantity: 10;">
-            <div class="card5" style="--index: 0;--color-card: 142, 249, 252;">
-              <div class="img">
-                <Img class="Logo" src="./images/pythonImage.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 1;--color-card: 142, 252, 204;">
-              <div class="img">
-                <img class="Logo" src="./images/htmlLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 2;--color-card: 142, 252, 157;">
-              <div class="img">
-                <img class="Logo" src="./images/cssLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 3;--color-card: 215, 252, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/javascriptLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 4;--color-card: 252, 142, 239;">
-              <div class="img">
-                <img class="Logo" src="./images/sglLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 5;--color-card: 252, 252, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/nodeLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 6;--color-card: 252, 208, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/expressLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 7;--color-card: 252, 142, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/reactLogo.png" alt="profile" />
-              </div>
-              <h1 style="font-weight: 1500; font-size: 15px;">Express Js</h1>
-            </div>
-            
-            <div class="card5" style="--index: 8;--color-card: 252, 208, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/awsLogo.png" alt="profile" />
-              </div>
-            </div>
-            <div class="card5" style="--index: 9;--color-card: 252, 208, 142;">
-              <div class="img">
-                <img class="Logo" src="./images/githubLogo.png" alt="profile" />
-              </div>
-            </div>
-          </div>
-        </div>
-    <div id="Certifications">
-      <h1 class="heading">Certifications</h1>
-      <div class="certificatesAlign">
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Build Your Own Static Website</h1>
-                <div class="Align">
-                  <img src="./images/htmlLogo.png" alt="profile" />
-                  <img src="./images/cssLogo.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/html,CssCertificates.jpg" />
-                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Programing Foundations with python</h1>
-                <div class="Align">
-                  <img src="./images/pythonImage.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/pythonCertificate.jpg" />
-                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Build Your Own Dynamic Web Application</h1>
-                <div class="Align">
-                  <img src="./images/javascriptLogo.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/javascriptCertificate.jpg" />
-                <a href="https://certificates.ccbp.in/academy/dynamic-web-application?id=DMOKSREJHF" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Introduction to Data Bases</h1>
-                <div class="Align">
-                  <img src="./images/sglLogo.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/SqlCertificate.jpg" />
-                <a href="https://certificates.ccbp.in/academy/introduction-to-databases?id=QSVJOIVSVT" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Developer Foundations</h1>
-                <div class="Align">
-                  <img src="./images/githubLogo.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/githubCertificate.jpg" />
-                <a href="https://certificates.ccbp.in/academy/static-website?id=XIDDAZCPYN" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="back">
-              <div class="back-content">
-                <h1>Build Your Own Static Website</h1>
-                <div class="Align">
-                  <img src="./images/flexBoxLogo.png" alt="profile" />
-                  <img src="./images/bootstarpLogo.png" alt="profile" />
-                </div>
-              </div>
-            </div>
-            <div class="front">
-              <div class="img">
-                <div class="circle">
-                </div>
-                <div class="circle" id="right">
-                </div>
-                <div class="circle" id="bottom">
-                </div>
-              </div>
-              <div class="front-content">
-                <img src="./images/responsiveWebpage.jpg" />
-                <a href="https://certificates.ccbp.in/academy/build-your-own-responsive-website?id=CIJTUBQOCG" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  <div id="Projects">
-    <h1 class="heading">Projects</h1>
-    <div class="projectsAlign">
-      <div class="projectCard">
-          <img src="/images/independencedayImage.jpg"  alt="independence"/>
-        <div class="layer">
-          <p>Title</p>
-          <h1>Independence Webpage Project</h1>
-          <p>langueges used</p>
-          <h2>HTML, CSS</h2>
-          <a href="https://srinadhmarly.ccbp.tech/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="projectCard">
-        <img src="/images/foodMunchImage.jpg" />
-        <div class="layer">
-          <p>Title</p>
-        <h1>FoodMunch Delivery App Project</h1>
-        <p>langueges used</p>
-        <h2>HTML, CSS, JAVASCRIPT</h2>
-          <a href="https://d2kzmfbhzwel4g.cloudfront.net/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="projectCard">
-        <img src="/images/bookmyshowImage.jpg" />
-        <div class="layer">
-          <p>Title</p>
-        <h1>BookMyShow clone web Project</h1>
-        <p>langueges used</p>
-        <h2>HTML, CSS</h2>
-          <a href="https://marlybookmyshow.ccbp.tech/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="projectCard">
-        <img src="/images/sunriseImage.jpg" />
-        <div class="layer">
-          <p>Title</p>
-        <h1>Flat Booking Webpage Project</h1>
-        <p>langueges used</p>
-        <h2>HTML, CSS</h2>
-          <a href="https://sunrisebookmark.ccbp.tech/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-      <div class="projectCard">
-        <img src="/images/backgroundImage.jpeg"/>
-        <div class="layer">
-          <p>Title</p>
-        <h1>NxtWatch Streming Project</h1>
-        <p>langueges used</p>
-        <h2>HTML, CSS, React</h2>
-          <a href><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-    </div>
-    <div class="underLine"></div>
-   </div>
-   
-   <div id="ContactUs">
-    <h2>Contact Me</h2>
-    <div class="contactAlign">
-     <div class="left">
-       
-         <h1><span><i class="fa-solid fa-envelope-open-text"></i></span>srinadhmarly@gmail.com</h1>
-       
-         <h1><span><i class="fa-solid fa-phone"></i></span> +91 6300716336</h1>
-       
-         <a href="http://www.linkedin.com/in/marly-srinadh" target="_blank"><h1><i class="fa-brands fa-linkedin"></i> http://www.linkedin.com/in/marly-srinadh</h1></a>
-       
-         <a href="https://x.com/srinadhmarly" target="_blank"><i class="fa-brands fa-twitter"></i> https://x.com/srinadhmarly</h1></a>
-       <p>Resume</p>
-       <a href="/images/latestResume.pdf" download><button class="btn">Download</button></a>
-    </div>
-     <div class="right">
-        <h1>Ping Me</h1>
-        <div class="form-container">
-          <form class="form" name="submit-to-google-sheet">
-            <div class="form-group">
-              <label for="Name">Your Name</label>
-              <input type="text" id="Name" name="Name" required="">
-              <label for="Email">Your Email</label>
-              <input type="text" id="Email" name="Email" required="">
-            </div>
-            <div class="form-group">
-              <label for="textarea">What You Want To Say?</label>
-              <textarea name="Message" id="textarea" rows="10" cols="50" required=""></textarea>
-            </div>
-            <a><button class="form-submit-btn">Submit</button></a>
-            <span id="msg"></span>
-          </form>
-        </div>
-     </div>
-     </div>
-     <div class="underLine"></div>
-     <div class="copyright">
-      <p class="footer">© 2025 Srinadh challa. All rights reserved, made with <i class="fa-solid fa-heart"></i> Love</p>
-     </div>
-    </div>
-   </div> 
-   <script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycbytDp68dkBIkwd1iFDSCWI6CTPW6UbSh7V8sOSF3-6gITe2d39Nz-GB6U2qGsKOw-9F/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const Msg= document.getElementById('msg')
-  
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-          msg.innerHTML = "Message sent successfully!"
-          setTimeout(() => {
-            Msg.innerHTML =""
-          }, 5000);
-          form.reset()
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbytDp68dkBIkwd1iFDSCWI6CTPW6UbSh7V8sOSF3-6gITe2d39Nz-GB6U2qGsKOw-9F/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const Msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                    method: 'POST',
+                    body: new FormData(form)
+                })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!"
+                    setTimeout(() => {
+                        Msg.innerHTML = ""
+                    }, 5000);
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script> 
+    </script>
 </body>
+
 </html>
